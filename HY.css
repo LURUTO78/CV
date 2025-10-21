@@ -1,0 +1,114 @@
+/* CSS for Luhay Martínez Fernández CV (Using only PDF concepts) */
+
+/* ---------------------------------------------------- */
+/* Global Styles and Box Model */
+/* ---------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif; /* Set font (Page 13 in CSS PDF) */
+    margin: 8px; 
+    background: #f8f7f4; /* Light background color */
+}
+
+#cv-container {
+    width: 900px; /* Set fixed width (Page 39 in CSS PDF) */
+    margin: 0 auto; /* Center alignment */
+    background-color: white; 
+    border: 1px solid #ccc; /* Border (Page 41 in CSS PDF) */
+}
+
+/* Headings Styling (Page 13, 14 in CSS PDF) */
+h1 {
+    font-size: 2.2em; 
+    font-weight: bold; 
+    margin: 0;
+}
+h2 {
+    text-transform: uppercase; /* Text effect (Page 14 in CSS PDF) */
+    border-bottom: 1px solid black; 
+    padding-bottom: 5px; 
+    margin-top: 30px; 
+    margin-bottom: 10px;
+    font-size: 1.2em; 
+}
+
+/* Lists and Paragraphs */
+ul {
+    list-style-type: none; /* Remove default marker (Page 31 in CSS PDF) */
+    padding: 0;
+    margin-bottom: 15px;
+}
+li {
+    margin-bottom: 5px;
+}
+p {
+    margin: 5px 0;
+}
+
+/* ---------------------------------------------------- */
+/* Header Layout: Using Float */
+/* ---------------------------------------------------- */
+header {
+    background-color: #fdfae5; 
+    padding: 30px 40px; 
+    border-bottom: 1px solid #e0e0e0;
+    
+    /* Use overflow: hidden to contain the floats (a technique to "clear" them) */
+    overflow: hidden; /* Page 39 (overflow property is covered) */
+}
+
+#image-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: #d1d1d1;
+    margin-right: 30px;
+    
+    /* Float the placeholder to place H1 next to it (Page 55 in CSS PDF) */
+    float: left; 
+}
+
+#name {
+    /* The heading will flow around the floating element */
+    margin-top: 40px; 
+}
+
+/* ---------------------------------------------------- */
+/* Two-Column Layout: Using Float (The equivalent of a grid/flex layout) */
+/* ---------------------------------------------------- */
+#main-content {
+    /* Must clear the floats from the child columns */
+    overflow: hidden; 
+}
+
+#left-column {
+    width: 35%; /* Set width as a percentage (Page 39 in CSS PDF) */
+    padding: 20px 30px;
+    background-color: #fdfae5; 
+    border-right: 1px solid #e0e0e0;
+    
+    /* Float the left column */
+    float: left; 
+}
+
+#right-column {
+    /* Calculate remaining space: 100% - 35% width - margins/paddings (approx.) */
+    width: 55%; 
+    padding: 20px 40px;
+    
+    /* Float the right column */
+    float: left;
+}
+
+/* Style for the "ABOUT ME" paragraph */
+#left-column p {
+    font-style: italic; /* Font style property (Page 13 in CSS PDF) */
+    line-height: 1.5; /* Vertical space (Page 14 in CSS PDF) */
+}
+
+/* Adjusted list style for the EDUCATION section */
+#right-column ul {
+    margin-left: 20px; 
+}
+#right-column ul li {
+    list-style-type: disc; 
+    margin-left: 0;
+}
