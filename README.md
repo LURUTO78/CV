@@ -1,4 +1,10 @@
-# CV
+# CV WEB - LUHAY MARTÍNEZ FERNÁNDEZ
+
+LINKS:
+Figma: https://www.figma.com/design/LpNGtqjur7fmFIcPkLssp3/CV-WEB---LUHAY-MART%C3%8DNEZ-FERN%C3%81NDEZ?m=auto&t=q3xzhl4p6AHzlAYe-6
+GitHub: https://github.com/LURUTO78/CV
+
+
 USER PROFILE: 
 
 "My name is Javier Ruiz and I am a Quality Assurance (QA) Coordinator at a mid-sized video game development studio. My primary role in hiring is to hire people with strong work ethic and communication skills for testing and support roles. My goal is not only to review technical skills, but also to identify candidates who demonstrate the ability to handle the pressure and discipline required for the production cycle. 
