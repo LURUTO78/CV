@@ -1,77 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luhay Martínez Fernández - CV</title>
-    <link href="HY.css" rel="stylesheet">
+    <title>CV - Luhay Martínez Fernández</title>
+    <link href= "HY.css" rel = "stylesheet" >
 </head>
-<body>
-    <div id="cv-container"> 
-        
-        <header>
-            <div id="image-placeholder">
-                <img src="profile.png" alt="Profile picture of Luhay Martínez Fernández"> 
+    <body>
+        <header class="main-header">
+            <div class="header-content">
+                <img src="fotocv.jpg" alt="Foto de perfil de Luhay Martínez" class="profile-picture">
+                <div class="red-bar">
+                    <h1 class="header-name">Luhay Martínez Fernández</h1>
+                </div>
             </div>
-            <h1 id="name">LUHAY MARTÍNEZ FERNÁNDEZ</h1>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div id="main-content">
-            
-            <section id="left-column">
+
+
+
+        <main>
+            <section id="about" class="section-padding">
+                <div class="container">
+                    <h2 class="section-title">ABOUT</h2>
+                    <p>I am an action-oriented professional who combines a creative
+                    approach to problem-solving with a productive mindset focused on
+                    efficiency and results. I am a hardworking individual
+                    with a strong sense of commitment to delivering every project
+                    at the highest level of quality.</p>
+
+                    <p>I am driven by ambition and enthusiasm for constant professional
+                    evolution. I don't settle for what I already know; I actively seek to
+                    develop new skills and abilities. My goal is simple: to keep growing so
+                    I can contribute more value, fresh ideas, and better solutions to the
+                    team and the organization.</p>
                 
-                <div class="section-block">
-                    <h2>CONTACT</h2>
-                    <ul>
-                        <li>+34 682 53 20 22</li>
-                        <li>u610367@campus.udg.edu</li>
-                        <li>Escola Politecnica Superior - Girona</li>
-                    </ul>
-                </div>
-                
-                <div class="section-block">
-                    <h2>ABOUT ME</h2>
-                    <p><i>Hardworking, creative, and productive. Ambitious and enthusiastic about continuing to grow and evolve in my profession, constantly developing new skills and abilities that can contribute to it.</i></p>
-                </div>
-                
-                <div class="section-block">
-                    <h2>LANGUAGES</h2>
-                    <ul>
-                        <li>Spanish - Native</li>
-                        <li>Catalan - Native</li>
-                        <li>English - Advance (B2)</li>
-                        <li>French - Basic</li>
-                    </ul>
                 </div>
             </section>
 
-            <section id="right-column">
-                
-                <div class="section-block">
-                    <h2>EDUCATION</h2>
-                    
-                    <p><strong>Escola Els Grecs</strong></p>
-                    <p>Early Childhood and Primary Education<br/>2008 – 2017</p>
-                    
-                    <p><strong>Institut Cap Norfeu</strong></p>
-                    <ul>
-                        <li>Compulsory Secondary Education (ESO) 2017 – 2021</li>
-                        <li>Social Baccalaureate 2022 – 2024</li>
-                    </ul>
-                    
-                    <p><strong>Universitat de Girona</strong></p>
-                    <p><i>Currently studying the second year of a Bachelor’s Degree in Video Game Design and Development</i></p>
-                </div>
-                
-                <div class="section-block">
-                    <h2>WORK EXPERIENCE</h2>
-                    
-                    <p><strong>Dolce Vita</strong> / Hospitality / Waiter</p>
-                    <p><strong>Mercadona</strong> / Cashier / Fruit and Vegetables Department</p>
-                </div>
+
+
+
+            <section id="languages" class="section-padding">
+                <div class="container">
+                    <h2 class="section-title">LANGUAGES</h2>
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <div class="skill-bar is-full">
+                                <span>SPANISH</span>
+                            </div>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="language-item">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 70%;">
+                                    <span>ENGLISH</span>
+                                </div>
+                            </div>
+                            <span class="percentage">70%</span>
+                        </div>
+                        <div class="language-item">
+                            <div class="skill-bar is-full">
+                                <span>CATALAN</span>
+                            </div>
+                            <span class="percentage">100%</span>
+                        </div>
+                        <div class="language-item">
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 50%;">
+                                    <span>FRENCH</span>
+                                </div>
+                            </div>
+                            <span class="percentage">50%</span>
+                        </div>
+                    </div> 
+                </div> 
             </section>
 
-        </div>
-    </div>
-</body>
+
+
+
+            <section id="experience" class="section-padding">
+                <div class="container">
+                    <h2 class="section-title">EXPERIENCE</h2>
+                    <div class="timeline-container">
+                        <div class="timeline-entry">
+                            <div class="timeline-date">
+                                JUNE 2023 -<br>
+                                SEPTEMBER 2025
+                            </div>
+                            <div class="timeline-content">
+                                <h3>MERCADONA</h3>
+                                <h4>Fruit Section Lead and Multi-functional Support</h4>
+                                <p>Led the comprehensive management of the Fruit and Vegetable
+                                section, guaranteeing quality control, accurate stock rotation, and
+                                visual merchandising, which resulted in reduced waste.
+                                Additionally, provided critical multi-functional support in the Fish
+                                section and general stock replenishment, demonstrating high
+                                levels of responsibility and adaptability to store needs.</p>
+                             </div>
+                        </div> 
+                        <div class="timeline-entry">
+                            <div class="timeline-date">
+                                JUNE 2022 -<br>
+                                SEPTEMBER 2022
+                            </div>
+                            <div class="timeline-content">
+                                <h3>DOLCE VITA</h3>
+                                <h4>Waiter</h4>
+                                <p>Contributed to service excellence during the high season as a
+                                floor waiter. Focused on optimizing order taking and food and
+                                beverage service, working closely with the kitchen team to
+                                streamline table turnover and maximize the positive customer
+                                experience. </p>
+                            </div>
+                        </div> 
+                        <div class="timeline-entry">
+                            <div class="timeline-date">
+                                JUNE 2021 -<br>
+                                SEPTEMBER 2021
+                            </div>
+                            <div class="timeline-content">
+                                <h3>HOTEL ALMADRABA PARK</h3>
+                                <h4>Restaurant Waiter and Pool Bar Bartender</h4>
+                                <p>Demonstrated versatility and adaptability by simultaneously
+                                working as a Waiter in the main restaurant and an autonomous
+                                Bartender at the pool bar. Managed high-volume orders while
+                                maintaining premium service standards, including beverage
+                                inventory management and ensuring overall hotel guest
+                                satisfaction.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </section>
+
+
+
+            <section id="education" class="section-padding">
+                <div class="container">
+                    <h2 class="section-title">EDUCATION</h2>
+                    <div class="education-grid">
+                        <div class="education-item">
+                            <div class="edu-box-red">
+                                <span class="edu-date">2008 - 2017</span>
+                                <span class="edu-institution">ESCOLA ELS GRECS</span>
+                            </div>
+                            <div class="edu-box-white">
+                                <p>Early Childhood and Primary Education</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-box-red">
+                                <span class="edu-date">2021-2024</span>
+                                <span class="edu-institution">INSTITUT CAP NORFEU</span>
+                            </div>
+                            <div class="edu-box-white">
+                                <p>Social Baccalaureate</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-box-red">
+                                <span class="edu-date">2017 - 2021</span>
+                                <span class="edu-institution">INSTITUT CAP NORFEU</span>
+                            </div>
+                            <div class="edu-box-white">
+                                <p>Compulsory Secondary Education (ESO)</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-box-red">
+                                <span class="edu-date">2024 - PRESENT</span>
+                                <span class="edu-institution">UNIVERSITAT DE GIRONA</span>
+                            </div>
+                            <div class="edu-box-white">
+                                <p>Currently studying the second year of a Bachelor's Degree in Video Game Design and Development</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+        </main>
+
+
+
+        <footer id="contact" class="footer-padding">
+            <div class="container">
+                <h2 class="section-title">CONTACTS</h2>
+                <ul class="contact-list">
+                    <li>Carrer Viena 49</li>
+                    <li>+34 682 53 20 22</li>
+                    <li>luhaymartinezfernandez@gmail.com</li>
+                </ul>
+             </div>
+        </footer>
+    </body>
 </html>

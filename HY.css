@@ -1,144 +1,349 @@
-/* CSS para Luhay Martínez Fernández CV (Usando solo conceptos de los PDF) */
-
-/* ---------------------------------------------------- */
-/* Estilos Globales y Box Model */
-/* ---------------------------------------------------- */
 body {
-    font-family: Arial, sans-serif; /* [cite: 136] */
-    color: black;
-    background: #f8f7f4;
-    margin: 8px; /* [cite: 71, 574] */
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; 
+    color: #000000;
 }
 
-#cv-container {
-    width: 820px;
-    height: 1050px; /* [cite: 570] */
-    margin: 0 auto; /* Centrado: valor de margen de 4 (top, right, bottom, left) [cite: 577] */
-    background-color: white; 
-    border: 1px solid #ccc; /* [cite: 587] */
+
+
+
+/*HEADER*/
+.main-header {
+    width: 100%;
 }
 
-/* Encabezados y Textos */
-h1 {
-    font-size: 2.2em; 
-    font-weight: bold; /* [cite: 145] */
-    margin: 0;
-}
-h2 {
-    text-transform: uppercase; /* [cite: 148] */
-    padding-bottom: 5px; 
-    margin-top: 30px; 
-    margin-bottom: 10px;
-    font-size: 1.2em; 
+.header-content {
+    width: 100%;
+    position: relative;     
+    padding-top: 60px; 
+    background-color: #BF3535;
+    margin-top: 60px;
 }
 
-/* Listas y Párrafos */
-ul {
-    padding: 0; /* [cite: 573] */
-    margin-bottom: 15px;
+.red-bar {
+    color: white;
+    display: flex;
+    align-items: center; 
+    padding-left: 260px; 
+    padding-right: 40px;
+
 }
-li {
+
+.header-name {
+    font-size: 40px;
+}
+
+.profile-picture {
+    width: 180px;  
+    height: 180px;
+    border-radius: 50%; 
+    border: 7px solid white; 
+    position: absolute;
+    top: 0; 
+    left: 40px;
+}
+
+.main-nav {
+    background-color: #ffffff; 
+    border-bottom: 10px solid #BF3535;
+    width: 100%;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 260px; 
+    max-width: 1100px; 
+    margin: 0 auto;   
+}
+
+.main-nav li {
+    width: 100%;
+    margin-right: 25px; 
+}
+
+.main-nav a {
+    display: block; 
+    padding: 18px 10px;
+    text-decoration: none; 
+    color: #444; 
+    text-transform: uppercase;
+    font-size: 14.4px;
+}
+
+.main-nav a:hover {
+    width: 100%;
+    color: #BF3535;
+    font-weight: bold;
+}
+
+
+
+
+/*ABOUT*/
+
+main {
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px; 
+    margin: 0 auto;   
+    padding: 0 40px; 
+}
+
+.section-padding {
+    padding-top: 15px;    
+    padding-bottom: 70px; 
+}
+
+#about {
+    background-color: #e5e5e5; 
+    text-align: center; 
+    border-bottom: 10px solid #BF3535;
+}
+
+.section-title {
+    color: #BF3535;
+    font-size: 35.2px;
+    display: inline-block; 
+    border-bottom: 3px solid #BF3535;
+    padding-bottom: 5px;
+}
+
+#about p {
+    color: #444;
+    font-size: 17.6px;
+    line-height: 1.7; 
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#about p + p {
+    margin-top: 20px;
+}
+
+
+
+/*LANGUAGES*/
+
+#languages {
+    background-color: #f9f9f9;
+    text-align: center;
+    border-bottom: 10px solid #BF3535;
+}
+
+.languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 60px; 
+    margin-top: 50px; 
+}
+
+.language-item {
+    display: flex;
+    align-items: center; 
+}
+
+.percentage {
+    font-size: 17.6px;
+    color: #555;
+    margin-left: 15px; 
+}
+
+.skill-bar {
+    flex-grow: 1;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #BF3535;
+    border-radius: 20px;
+}
+
+.skill-fill {
+    background-color: #BF3535;
+    height: 100%;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.skill-bar.is-full {
+    background-color: #BF3535; 
+    border: none; 
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.skill-fill span, .skill-bar.is-full span {
+    color: white;
+    font-size: 14.4px;
+}
+
+
+
+/*EXPERIENCE*/
+
+#experience {
+    background-color: #e5e5e5;
+    text-align: center; 
+    border-bottom: 10px solid #BF3535;
+}
+
+.timeline-container {
+    position: relative; 
+    margin-top: 50px;
+    padding-bottom: 20px; 
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    width: 3px;
+    background-color: #BF3535;
+}
+
+.timeline-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative; 
+    margin-bottom: 40px; 
+}
+
+.timeline-entry::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 50.2%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #BF3535;
+}
+
+.timeline-date {
+    text-align: right;
+    padding-right: 40px; 
+    font-size: 14.4px;
+    font-weight: bold;
+    color: #666;
+    line-height: 1.4;
+}
+
+.timeline-content {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.timeline-content h3 {
+    color: #333;
     margin-bottom: 5px;
 }
-p {
-    margin: 5px 0;
+
+.timeline-content h4 {
+    color: #BF3535; 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
-/* ---------------------------------------------------- */
-/* Maquetación de Cabecera (Float) */
-/* ---------------------------------------------------- */
-header {
-    background-color: #b74646; 
-    padding: 70px 60px; 
-    border-bottom: 1px solid #e0e0e0;
-    
-    /* Contiene los elementos flotantes dentro de la cabecera */
-    overflow: hidden; /* [cite: 570] */
+.timeline-content p {
+    font-size: 15.2px;
+    line-height: 1.6;
+    color: #555;
 }
 
-#image-placeholder {
-    width: 120px;
-    height: 120px;
-    background-color: #d1d1d1;  
-    margin-right: 30px;
-    
-    /* El elemento flota y permite que el h1 se coloque a su lado */
-    float: left; /* [cite: 704, 708] */
+
+
+
+/*EDUCATION*/
+
+#education {
+    background-color: #f9f9f9;
+    text-align: center; 
+    border-bottom: 10px solid #BF3535;
 }
 
-#name {
-    margin-top: 40px; 
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px 40px; 
+    margin-top: 50px;
+    text-align: left;
 }
 
-/* ---------------------------------------------------- */
-/* Maquetación de Columnas (Float) */
-/* ---------------------------------------------------- */
-#main-content {
-    /* SOLUCIÓN AL PROBLEMA VISUAL: Contiene las columnas flotantes */
-    overflow: hidden; /* [cite: 570] */
+.education-item {
+    display: flex; 
+    border: 2px solid #BF3535;
+}
+
+.edu-box-red {
+    background-color: #BF3535;
+    color: white;
+    padding: 20px;
+    width: 45%; 
     display: flex;
-    justify-content: space-between;
-    
+    flex-direction: column;
+    justify-content: center;
 }
 
-#left-column {
-    width: 35%; 
-    padding: 30px 70px;
-    /* ACTIVA LA MAQUETACIÓN DE COLUMNAS: Flota a la izquierda */
-    float: left; /* [cite: 704, 708] */ç
+.edu-date {
+    font-size: 14.4px;
 }
 
-#right-column {
+.edu-institution {
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.edu-box-white {
+    background-color: white;
+    padding: 20px;
     width: 55%; 
-    padding: 30px 50px;
-    
-    /* ACTIVA LA MAQUETACIÓN DE COLUMNAS: Flota a la izquierda, al lado de la otra columna */
-    float: left; /* [cite: 704, 708] */
+    display: flex;
+    align-items: center;
+    color: #444;
+    font-size: 15.2px;
+    line-height: 1.5;
 }
 
-/* Estilo para el párrafo "SOBRE MÍ" */
-#left-column p {
-    font-style: italic; /* [cite: 145] */
-    line-height: 1.5; /* [cite: 148] */
-    font-size: 14px;
-}
-#left-column h2 {
-    padding-bottom: 5px;
-    font-size: 24px;
-}
-#left-column ul li {
-    margin-bottom: 8px; 
-    font-size: 18px;
+
+
+
+/*CONTACTS*/
+
+#contact {
+    background-color: #e5e5e5;
+    text-align: center; 
 }
 
-#left-column ul li:hover {
-    font-weight: bold; 
-    font-style  : #1b0db6;
-}
-#left-column p{
-    font-size: 18px;
+.footer-padding {
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
-/* Ajuste de listas en la columna derecha */
-#right-column ul {
-    margin-left: 20px; 
+.contact-list { 
+    text-align: left; 
+    margin-top: 10px;
+    color: #444;
+    font-size: 17.6px;
+    line-height: 1.8;
 }
-#right-column ul li {
-    list-style-type: disc; 
-    margin-left: 0;
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#right-column h2 {
-    font-size: 24px;
-    padding-bottom: 5px;
-}
-#right-column p {
-    font-size: 18px;
-    line-height: 1.6; 
-}
-#right-column ul li {
-    font-size: 18px;
-}
-#right-column ul li:hover {
-    font-weight: bold; 
-    font-style  : #1b0db6;
+
+.contact-list li:hover{
+    color:#BF3535;
+    font-weight: bold;
 }
